@@ -24,3 +24,12 @@ body::before {
     --bs-aspect-ratio: 50%;
   }
 }
+.row:hover {
+  cursor: pointer;
+}
+.slideInLeft,
+.slideInRight,
+.fadeInDown {
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
