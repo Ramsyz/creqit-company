@@ -1,0 +1,26 @@
+body::before {
+  display: block;
+  content: "";
+  height: 5rem;
+}
+.bg-gray {
+  background-color: #333;
+  color: #fff;
+}
+.btn-gray {
+  background-color: #333;
+  color: #fff;
+}
+.navbar-gray {
+  background-color: #333;
+  color: #fff;
+}
+.text-white {
+  color: #fff;
+}
+
+.ratio-4x3 {
+  @media (md) {
+    --bs-aspect-ratio: 50%;
+  }
+}
