@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Creqit Talent</title>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-gray navbar-dark fixed-top">
@@ -113,18 +114,31 @@
           </div>
           <div class="modal-body">
             <p class="lead">Fill out form and we will get back to you</p>
-            <form>
+            <div id="error"></div>
+            <form id="form" action="/" method="GET">
               <div class="mb-3">
                 <label for="name" class="col-form-label">Name:</label>
-                <input type="text" class="form-control" id="name" />
+                <input type="text" class="form-control" id="name" name="name" required />
               </div>
               <div class="mb-3">
                 <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
               </div>
             </form>
           </div>
@@ -136,7 +150,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
       </div>
